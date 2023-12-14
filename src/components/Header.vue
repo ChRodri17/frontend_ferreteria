@@ -74,7 +74,7 @@ const authStore = useAuthStore();
 
                         <RouterLink v-if="!authStore.token" to="/login" class="btn custom-btn d-lg-block d-none" style="color:  white;">Iniciar
                             Sesión</RouterLink>
-                        <a v-else @click="authStore.logout()" class="btn custom-btn d-lg-block d-none">Salir</a>
+                        <a v-else @click="authStore.logout()" class="btn custom-btn d-lg-block d-none" style="color:  white;">Salir</a>
 
                         <!-- <li class="nav-item">
                             <a v-if="!authStore.token" class="nav-link" href="/views/login">Iniciar Sesion</a>
